@@ -42,6 +42,7 @@ def main():
     score_perc = (score / len(qnas)) * 100
     emoticon = ":) good!" if score_perc > 50 else ":( apply yourself"
     score_perc = f"{score_perc:.0f}" if score_perc % 1 == 0 else f"{score_perc:.2f}"
+
     print(f"\nFinal score: {score_perc}% ({score}/{len(qnas)}) {emoticon}")
 
 
